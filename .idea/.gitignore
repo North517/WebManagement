@@ -1,0 +1,36 @@
+# IDEA配置文件
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# 编译产物
+target/
+classes/
+generated-sources/
+generated-test-sources/
+
+# 若有其他敏感配置文件，也一并添加
+src/main/resources/application.yml  # 若源文件也含敏感信息
+
+
+
+# Maven相关
+mvnw
+mvnw.cmd
+.mvn/
+
+# 日志文件
+*.log
+logs/
+
+# 临时文件
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# 配置文件
+application.yml
+application.properties
+

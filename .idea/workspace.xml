@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="173d7d10-b8e0-46de-b114-3edecbd26388" name="Changes" comment="基本后端功能--gitignore.000">
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "North517"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "git@github.com:North517/WebManagement.git",
+    "accountId": "13aac31d-bcaa-4cb1-b703-0b06ff3f38b4"
+  }
+}]]></component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="36VvuuJjGb6PCXrDK7W86T4Xfpm" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.TliasWebManagementApplication.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.TliasWebManagementApplication.executor": "Run",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "E:/IDEA/Java_Web_Learning/tlias-web-management/.idea",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\IDEA\Java_Web_Learning\tlias-web-management\.idea" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.TliasWebManagementApplication">
+    <configuration name="TliasWebManagementApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.north.tliaswebmanagement.TliasWebManagementApplication" />
+      <module name="tlias-web-management" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.north.tliaswebmanagement.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TliasWebManagementApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="tlias-web-management" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.north.tliaswebmanagement.TliasWebManagementApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.TliasWebManagementApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.25659.39" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.25659.39" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="173d7d10-b8e0-46de-b114-3edecbd26388" name="Changes" comment="" />
+      <created>1765104780178</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1765104780178</updated>
+      <workItem from="1765104782447" duration="12079000" />
+      <workItem from="1765161588867" duration="12705000" />
+      <workItem from="1765191426744" duration="12582000" />
+    </task>
+    <task id="LOCAL-00001" summary="基本后端功能">
+      <option name="closed" value="true" />
+      <created>1765206750320</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1765206750320</updated>
+    </task>
+    <task id="LOCAL-00002" summary="基本后端功能--gitignore">
+      <option name="closed" value="true" />
+      <created>1765207101361</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1765207101361</updated>
+    </task>
+    <task id="LOCAL-00003" summary="基本后端功能--gitignore1">
+      <option name="closed" value="true" />
+      <created>1765207164053</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1765207164053</updated>
+    </task>
+    <task id="LOCAL-00004" summary="基本后端功能--gitignore.">
+      <option name="closed" value="true" />
+      <created>1765207784103</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1765207784103</updated>
+    </task>
+    <task id="LOCAL-00005" summary="基本后端功能--gitignore.">
+      <option name="closed" value="true" />
+      <created>1765207806711</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1765207806711</updated>
+    </task>
+    <task id="LOCAL-00006" summary="基本后端功能--gitignore.">
+      <option name="closed" value="true" />
+      <created>1765208167009</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1765208167009</updated>
+    </task>
+    <task id="LOCAL-00007" summary="基本后端功能--gitignore.1">
+      <option name="closed" value="true" />
+      <created>1765208335219</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1765208335219</updated>
+    </task>
+    <task id="LOCAL-00008" summary="基本后端功能--gitignore.1">
+      <option name="closed" value="true" />
+      <created>1765208530917</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1765208530917</updated>
+    </task>
+    <task id="LOCAL-00009" summary="基本后端功能--gitignore.0">
+      <option name="closed" value="true" />
+      <created>1765208956884</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1765208956884</updated>
+    </task>
+    <task id="LOCAL-00010" summary="基本后端功能--gitignore.0">
+      <option name="closed" value="true" />
+      <created>1765208968150</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1765208968150</updated>
+    </task>
+    <task id="LOCAL-00011" summary="基本后端功能--gitignore.00">
+      <option name="closed" value="true" />
+      <created>1765209065932</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1765209065932</updated>
+    </task>
+    <task id="LOCAL-00012" summary="基本后端功能--gitignore.00">
+      <option name="closed" value="true" />
+      <created>1765209144994</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1765209144994</updated>
+    </task>
+    <task id="LOCAL-00013" summary="基本后端功能--gitignore.000">
+      <option name="closed" value="true" />
+      <created>1765210932597</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1765210932597</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="基本后端功能" />
+    <MESSAGE value="基本后端功能--gitignore" />
+    <MESSAGE value="基本后端功能--gitignore1" />
+    <MESSAGE value="基本后端功能--gitignore." />
+    <MESSAGE value="基本后端功能--gitignore.1" />
+    <MESSAGE value="基本后端功能--gitignore.0" />
+    <MESSAGE value="基本后端功能--gitignore.00" />
+    <MESSAGE value="基本后端功能--gitignore.000" />
+    <option name="LAST_COMMIT_MESSAGE" value="基本后端功能--gitignore.000" />
+  </component>
+</project>
