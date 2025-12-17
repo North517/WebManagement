@@ -20,6 +20,9 @@ public class LoginController {
 
     @Autowired
     private EmpService empService;
+    @Autowired
+    private JwtUtils jwtUtils;
+
 
     @PostMapping("/login")
     public Result login(@RequestBody Emp emp){
@@ -32,8 +35,9 @@ public class LoginController {
             claims.put("id", e.getId());
             claims.put("name", e.getName());
             claims.put("username", e.getUsername());
-
-            String jwt = JwtUtils.generateJwt(claims); //jwt包含了当前登录的员工信息
+            // jwt包含了当前登录的员工信息
+//          String jwt = JwtUtils.generateJwt(claims);
+            String jwt = jwtUtils.generateJwt(claims);
             return Result.success(jwt);
         }
 

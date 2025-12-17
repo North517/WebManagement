@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace必须与接口的全类名一致 -->
+<mapper namespace="com.north.tliaswebmanagement.mapper.DeptMapper">
+
+    <!-- 1. 查询全部部门数据（对应接口list方法） -->
+    <select id="list" resultType="com.north.tliaswebmanagement.pojo.Dept">
+        select * from dept
+    </select>
+
+    <!-- 2. 根据id删除部门（对应接口deleteById方法） -->
+    <delete id="deleteById">
+        delete from dept where id = #{id}
+    </delete>
+
+    <!-- 3. 新增部门（对应接口insert方法） -->
+    <insert id="insert">
+        insert into dept(name, create_time, update_time)
+        values (#{name}, #{createTime}, #{updateTime})
+    </insert>
+
+    <!-- 4. 根据部门id查询部门信息（对应接口getById方法） -->
+    <select id="getById" resultType="com.north.tliaswebmanagement.pojo.Dept">
+        select * from dept where id = #{id}
+    </select>
+
+    <!-- 5. 根据部门id更新部门信息（对应接口update方法） -->
+    <update id="update">
+        update dept
+        set name = #{name},
+            create_time = #{createTime},
+            update_time = #{updateTime}
+        where id = #{id}
+    </update>
+
+</mapper>

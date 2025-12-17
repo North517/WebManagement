@@ -6,18 +6,30 @@ import io.jsonwebtoken.SignatureAlgorithm;
 import java.util.Date;
 import java.util.Map;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
 @Slf4j
+@Component
 public class JwtUtils {
 
-    private static String signKey = "itheima";
-    private static Long expire = 43200000L;
+    /** 硬编码配置*/
+//    private static String signKey = "North000";
+//    private static Long expire = 43200000L;
+
+    /** 从配置文件注入配置 */
+    @Value("${jwt.sign-key}")
+    private String signKey;
+
+    @Value("${jwt.expire}")
+    private Long expire;
 
     /**
      * 生成JWT令牌
      * @param claims JWT第二部分负载 payload 中存储的内容
      * @return
      */
-    public static String generateJwt(Map<String, Object> claims){
+    public String generateJwt(Map<String, Object> claims){
         String jwt = Jwts.builder()
                 .addClaims(claims)
                 .signWith(SignatureAlgorithm.HS256, signKey)
@@ -34,7 +46,7 @@ public class JwtUtils {
      * @param jwt JWT令牌
      * @return JWT第二部分负载 payload 中存储的内容
      */
-    public static Claims parseJWT(String jwt){
+    public Claims parseJWT(String jwt){
         Claims claims = Jwts.parser()
                 .setSigningKey(signKey)
                 .parseClaimsJws(jwt)

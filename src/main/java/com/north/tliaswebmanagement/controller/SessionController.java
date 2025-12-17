@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 /**
- * Cookie、HttpSession演示
+ * Cookie、HttpSession
  */
 @Slf4j
 @RestController

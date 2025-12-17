@@ -4,6 +4,7 @@ import com.alibaba.fastjson.JSONObject;
 import com.north.tliaswebmanagement.pojo.Result;
 import com.north.tliaswebmanagement.utils.JwtUtils;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.StringUtils;
 
 import javax.servlet.*;
@@ -15,6 +16,8 @@ import java.io.IOException;
 @Slf4j
 //@WebFilter(urlPatterns = "/*")
 public class LoginCheckFilter implements Filter {
+    //@Autowired
+    private JwtUtils jwtUtils;
     @Override
     public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
         //将request强转成http类型
@@ -47,7 +50,7 @@ public class LoginCheckFilter implements Filter {
 
         //5.解析token，如果解析失败，返回错误结果（未登录）。
         try {
-            JwtUtils.parseJWT(jwt);
+            jwtUtils.parseJWT(jwt);
         } catch (Exception e) {//jwt解析失败
             e.printStackTrace();
             log.info("解析令牌失败, 返回未登录错误信息");

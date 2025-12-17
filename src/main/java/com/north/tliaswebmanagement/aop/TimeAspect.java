@@ -24,7 +24,6 @@ public class TimeAspect {
         //3. 记录结束时间, 计算方法执行耗时
         long end = System.currentTimeMillis();
         log.info(joinPoint.getSignature()+"方法执行耗时: {}ms", end-begin);
-
         return result;
     }
 

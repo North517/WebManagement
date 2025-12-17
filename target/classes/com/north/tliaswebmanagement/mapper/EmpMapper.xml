@@ -2,8 +2,9 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace必须与接口全类名一致 -->
 <mapper namespace="com.north.tliaswebmanagement.mapper.EmpMapper">
-    <!-- 更新员工（对应接口update方法） -->
+    <!-- 1. 更新员工（原有） -->
     <update id="update">
         update emp
         <set>
@@ -20,7 +21,7 @@
         where id = #{id}
     </update>
 
-    <!-- 批量删除（对应接口delete方法） -->
+    <!-- 2. 批量删除员工（原有） -->
     <delete id="delete">
         delete from emp where id in
         <foreach collection="ids" item="id" separator="," open="(" close=")">
@@ -28,7 +29,7 @@
         </foreach>
     </delete>
 
-    <!-- 条件查询（对应接口list方法） -->
+    <!-- 3. 员工信息条件查询（原有） -->
     <select id="list" resultType="com.north.tliaswebmanagement.pojo.Emp">
         select * from emp
         <where>
@@ -38,4 +39,30 @@
         </where>
         order by update_time desc
     </select>
+
+    <!-- 4. 新增员工（新增：替代原@Insert注解） -->
+    <insert id="insert">
+        insert into emp(
+            username, name, gender, image, job,
+            entrydate, dept_id, create_time, update_time
+        ) values (
+                     #{username},#{name},#{gender},#{image},#{job},
+                     #{entrydate},#{deptId},#{createTime},#{updateTime}
+                 )
+    </insert>
+
+    <!-- 5. 根据ID查询员工（新增：替代原@Select注解） -->
+    <select id="getById" resultType="com.north.tliaswebmanagement.pojo.Emp">
+        select * from emp where id = #{id}
+    </select>
+
+    <!-- 6. 根据用户名和密码查询员工（新增：替代原@Select注解） -->
+    <select id="getByUsernameAndPassword" resultType="com.north.tliaswebmanagement.pojo.Emp">
+        select * from emp where username = #{username} and password = #{password}
+    </select>
+
+    <!-- 7. 根据部门ID删除员工（新增：替代原@Delete注解） -->
+    <delete id="deleteByDeptId">
+        delete from emp where dept_id = #{deptId}
+    </delete>
 </mapper>

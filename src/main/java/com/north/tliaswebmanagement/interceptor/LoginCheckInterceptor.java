@@ -4,6 +4,7 @@ import com.alibaba.fastjson.JSONObject;
 import com.north.tliaswebmanagement.pojo.Result;
 import com.north.tliaswebmanagement.utils.JwtUtils;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
 import org.springframework.web.servlet.HandlerInterceptor;
@@ -15,6 +16,10 @@ import javax.servlet.http.HttpServletResponse;
 @Slf4j
 @Component
 public class LoginCheckInterceptor implements HandlerInterceptor {
+
+    @Autowired
+    private JwtUtils jwtUtils;
+
     @Override
     public boolean preHandle(HttpServletRequest req, HttpServletResponse resp, Object handler) throws Exception {
         //1.获取请求url。
@@ -56,7 +61,7 @@ public class LoginCheckInterceptor implements HandlerInterceptor {
 
         //6.解析token，如果解析失败，返回错误结果（未登录）。
         try {
-            JwtUtils.parseJWT(jwt);
+            jwtUtils.parseJWT(jwt);
         } catch (Exception e) {
             e.printStackTrace();
             log.info("解析令牌失败, 返回未登录错误信息");

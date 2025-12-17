@@ -13,7 +13,7 @@ public class GlobalExceptionHandler {
     @ExceptionHandler(Exception.class)
     public Result ex (Exception ex){
         ex.printStackTrace();
-        return Result.error("对不起，请联系工作人原");
+        return Result.error("对不起，请联系工作人员    微信：North-517");
     }
 
 }
